@@ -2,7 +2,7 @@ import database from "@/firebase/firebase"
 import { NextResponse } from "next/server"
 import { collection, doc, getDocs, query, setDoc, where } from "firebase/firestore";
 
-const DOMAIN_PREFIX = 'http://localhost:3000/api/shorten/'
+const DOMAIN_PREFIX = 'https://urlshortener-black-six.vercel.app/api/shorten/'
 
 export async function POST(request: Request) {
     const data = await request.json()
